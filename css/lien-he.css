@@ -1,0 +1,97 @@
+.box-col-6{
+	max-width: 50%;
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+.header-page-contact h1 {
+    font-size: 30px;
+    font-weight: 700;
+    margin: 0px 0;
+}
+.header-page-contact:after {
+    content: "";
+    display: block;
+    width: 50px;
+    height: 4px;
+    margin-top: 20px;
+    background: #272727;
+    margin-bottom: 30px;
+}
+.box-info-contact ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+.box-info-contact li {
+    margin-bottom: 30px;
+}
+.box-info-contact li p {
+    margin-bottom: 0;
+    color: #666;
+    font-weight: 500;
+}
+.box-info-contact p {
+    margin-top: 5px;
+}
+.box-send-contact h2 {
+    font-weight: 700;
+    font-size: 25px;
+    margin: 40px 0 35px;
+    margin-top: 0px;
+}
+.bracum {
+    margin: 20px 0;
+}
+.ol-non {
+    margin: 0;
+    padding: 0;
+}
+.ol-non li {
+    list-style-type: none;
+    display: inline-block;
+    margin-right: 25px;
+    position: relative;
+}
+.ol-non li a {
+    list-style-type: none;
+    display: inline-block;
+    font-size: 16px;
+    color: #333;
+    text-transform: capitalize;
+    padding-right: 20px;
+}
+.box-send-contact input{
+    height: 40px;
+}
+.box-send-contact input,.box-send-contact textarea{
+    width: 100%;
+   
+    border: 1px solid #ddd;
+    font-size: 10pt;
+    margin-bottom: 20px;
+    float: left;
+    color: #63717f;
+    padding-left: 15px;
+    border-radius: 5px;
+}
+.box-send-contact{
+    width: 70%;
+    text-align: center;
+}
+.button.dark{
+    background: #1f601f;
+    border: 1px solid #1f601f;
+    padding: 10px;
+    border-radius: 4px;
+    font-size: 15px;
+    color: #fff;
+    cursor: pointer;
+}
+.contacts{
+    margin: 50px 0px;
+}
+textarea{
+    padding-left: 15px;
+    padding-top: 10px;
+}

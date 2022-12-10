@@ -1,0 +1,37 @@
+.box-content-info{
+    margin: 40px 0px;
+}
+.box-content-info .item{
+    text-align: center;
+    border: 1px solid #ddd;
+    width: 100%;
+    padding: 25px 0px 15px 0px;
+    border-radius: 9px;
+}
+.box-content-info img{
+    width: 250px !important;
+    height: 250px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+.info{
+    width: 60%;
+    margin: auto;
+}
+.info p{
+    text-align: left;
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+.info p strong{
+    color: #1f601f;
+}
+.box-row{
+    justify-content: center;
+}
+.box-content-info  h3{
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 26px;
+    color: #1f601f;
+}

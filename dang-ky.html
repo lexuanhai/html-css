@@ -1,0 +1,210 @@
+<html>
+   <head>
+      <title> Đăng nhập </title>
+	  <link rel="stylesheet"href="bootstrap/css/bootstrap.min.css">	  
+	  <link rel="stylesheet"href="fontawesome/css/fontawesome.min.css">	   -->
+	  
+	   <link rel="stylesheet"href="./css/style.css">
+     <style>
+      .txt-tile{
+         font-size: 15px;
+      }
+     </style>
+   </head>
+   <body>
+	<div class="box-head">
+		<div class="container">
+		   <div class="row">
+			  <div class="col-4">
+				 <div class="box-Sform">
+					<form class="form-inline">
+					   <input type="text" class="form-control my-form" id="inlineFormInputName2" placeholder="Tìm kiếm..." value="" autocomplete="off" onfocus="onfos()" onfocusout="unfos()" onkeydown="autocompateFirst()">
+					                         
+					</form>
+				 </div>
+			  </div>
+			  <div class="col-4">
+				 <div class="box-logo">
+					<a href="javascript:void(0)">
+					<img width="320" height="80" src="./img/logomoi-compressor.png" alt="Logo beautygarden.vn" class="img-reponsive">
+					</a>
+				 </div>
+			  </div>
+			  <div class="col-4">
+				 <div class="box-card">
+					<ul class="ul-non ul-card">
+					   <li>
+						  <a href="javascript:void(0)" class="like-pd" title="Sản phẩm yêu thích">
+						  <i class="fa fa-heart-o" aria-hidden="true"></i>
+						  Yêu thích
+						  <span id="numberLike" data-id="0">0</span>
+						  </a>
+					   </li>
+					   <li>
+						  <a href="javascript:void(0)" class="shop_cart" title="Giỏ hàng">
+						  <i class="fa fa-shopping-cart "></i>
+						  Giỏ hàng
+						  <span>0</span>
+						  </a>
+					   </li>
+					</ul>
+				 </div>
+			  </div>
+		   </div>
+		</div>
+	 </div>
+      <div class="menu">
+         <div class="container">
+            <ul>
+				<li> <a href="trangchu.html">Trang chủ </a></li>
+				<li> <a href="san-pham.html">Sản phẩm </a></li>
+				
+				<li> <a href="lien-he.html">Liên hệ </a></li>
+				<li> <a href="dangnhap.html"> Đăng nhập </a></li>
+            <li> <a href="dang-ky.html"> Đăng ký </a></li>
+            </ul>
+         </div>
+      </div>
+      <div class="box-content-custom">
+         <div class="container">
+            <div id="box" style="padding-top: 25px;">
+               <h1 style="font-size: 25px;">
+               ĐĂNG KÝ
+			   </h1>               
+            <div  class="row">
+               <div  class="col-12">
+                  <div  class="form-group has-icon-left">
+                     <label  for="first-name-icon" class="txt-tile"> Họ và tên </label> 
+                     <div  class="position-relative">
+                        <input  type="text" placeholder="Nhập họ và tên" id="full_name" name="full_name" class="form-control custom-format">
+                         <label id="full_name-error" class="error" for="full_name" style="display: none;">Số điện thoại đã tồn tại</label>
+                        <div  class="form-control-icon"><i  class="bi bi-person"></i></div>
+                     </div>
+                     <!---->
+                  </div>
+               </div>
+               <div  class="col-12">
+                  <div  class="form-group has-icon-left">
+                     <label  for="email-id-icon" class="txt-tile">Email</label> 
+                     <div  class="position-relative">
+                        <input  type="text" placeholder="abc@email.com" id="email" name="email" class="form-control custom-format"> 
+                        <label id="email-error " class="error email-exist" style="display: none;" for="email">Email đã tồn tại</label>
+                        <div  class="form-control-icon"><i  class="bi bi-envelope"></i></div>
+                     </div>
+                     <!---->
+                  </div>
+               </div>
+               <div  class="col-12">
+                  <div  class="form-group has-icon-left">
+                     <label  for="mobile-id-icon" class="txt-tile"> Số điện thoại </label> 
+                     <div  class="position-relative">
+                        <input  type="text" placeholder="0123456789" id="phone_number" name="phone_number" class="form-control custom-format"> 
+                        <label id="phone_number-error" class="error phone_number-exist" for="phone_number" style="display: none;">Số điện thoại đã tồn tại</label>
+                        <div  class="form-control-icon"><i  class="bi bi-phone"></i></div>
+                     </div>
+                     <!---->
+                  </div>
+               </div>
+               
+               <div  class="col-12 txtPassword">
+                  <div  class="form-group has-icon-left">
+                     <label  for="password-id-icon" class="txt-tile">Password</label> 
+                     <div  class="position-relative">
+                        <input  type="password" placeholder="*******" id="password" name="password" class="form-control"> 
+                        <div  class="form-control-icon"><i  class="bi bi-lock"></i></div>
+                     </div>
+                     <!---->
+                  </div>
+               </div>
+               <div  class="col-12">
+                  <div  class="form-group has-icon-left">
+                     <label  for="password-id-icon" class="txt-tile">Địa chỉ</label> 
+                     <div  class="position-relative">
+                        <textarea  name="address" id="address" rows="2" placeholder="..." class="form-control"></textarea>
+                        <div  class="form-control-icon"><i  class="bi bi-geo-alt"></i></div>
+                     </div>
+                     <!---->
+                  </div>
+               </div>
+               <div class="col-12"><button  type="submit" class="btn btn-success me-1 mb-1 btn-submit-format w-100">Đăng Ký</button></div>
+            </div>
+            </div>
+         </div>
+      </div>
+      <footer class="main-footer">
+         <div class="container">
+            <div class="">
+               <div class="row">
+                  <div class="col-4">
+                     <div class="footer-col footer-block">
+                        <h4 class="footer-title">
+                           Giới thiệu
+                        </h4>
+                        <div class="footer-content">
+                           <p>Runner Inn trang mua sắm trực tuyến của thương mỹ phẩm, mỹ phẩm nam, nữ, phụ kiện, giúp bạn tiếp cận xu hướng thời trang mới nhất.</p>
+                           <div class="social-list">
+                              <a href="#" class="fab fa-facebook"></a>
+                              <a href="#" class="fab fa-google"></a>
+                              <a href="#" class="fab fa-twitter"></a>
+                              <a href="#" class="fab fa-youtube"></a>
+                              <a href="#" class="fab fa-skype"></a>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                
+                  <div class="col-4">
+                     <div class="footer-col footer-block">
+                        <h4 class="footer-title">
+                           Thông tin liên hệ
+                        </h4>
+                        <div class="footer-content toggle-footer">
+                           <ul>
+                              <li><span>Địa chỉ:</span> 117-119 Lý Chính Thắng, Phường 7, Quận 3, TP. Hồ Chí Minh, Vietnam</li>
+                              <li><span>Điện thoại:</span> +84 (028) 38800659</li>
+                              <li><span>Fax:</span> +84 (028) 38800659</li>
+                              <li><span>Mail:</span> contact@aziworld.com</li>
+                           </ul>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-xs-12 col-sm-6 col-md-3">
+                     <div class="footer-col footer-block">
+                        <h4 class="footer-title">
+                           FANPAGE
+                        </h4>
+                        <div class="footer-content">
+                           <div id="fb-root">
+                              <div class="footer-static-content">
+                                 <div class="fb-page" data-href="javascript:void(0)" data-tabs="timeline" data-width="" data-height="215" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
+                                    <blockquote cite="javascript:void(0)" class="fb-xfbml-parse-ignore"><a href="javascript:void(0)">AziWorld Viet Nam</a>
+                                    </blockquote>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="main-footer--copyright">
+            <div class="container">
+               <hr>
+               <div class="main-footer--border" style="text-align: center;
+                  padding: 10px 0px;
+                  display: inline-flex;
+                  justify-content: center;
+                  width: 100%;
+                  align-items: center;">
+                  <p>Copyright © 2022 <a href="javascript:void(0)"> beautygarden Inn</a>. <a href="javascript:void(0)">Powered by </a></p>
+               </div>
+            </div>
+         </div>
+      </footer>
+   </body>
+    <script src="./bootstrap/js/bootstrap.min.js"></script>
+   <script src="./bootstrap/js/jquery-3.2.1.min.js"></script>
+   <script src="./bootstrap/js/owl.carousel.min.js"></script>
+   <script src="./fontawesome/js/fontawesome.min.js"></script>   
+</html>

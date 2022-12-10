@@ -1,0 +1,273 @@
+<html>
+   <head>
+      <title> Trang chủ </title>	  
+	  <link rel="stylesheet"href="bootstrap/css/bootstrap.min.css">	  
+	  <link rel="stylesheet"href="fontawesome/css/fontawesome.min.css">	 
+	  <link rel="stylesheet"href="fontawesome/css/brands.min.css">	 
+	  <link rel="stylesheet"href="fontawesome/css/solid.min.css">	 
+	  <link rel="stylesheet"href="fontawesome/css/all.min.css">	 
+	  <link rel="stylesheet"href="bootstrap/css/owl.carousel.min.css">	  
+	  <style>
+		body{
+			color: #607080;
+    		background-color: #f2f7ff;
+		}
+		.box-left{
+			background-color: #fff;
+			bottom: 0;
+			transition: left 0.5s ease-out;
+			position: fixed;
+			top: 0;
+			z-index: 10;
+			width: 300px;
+			height: 100vh;
+			left: 0;
+			overflow: hidden !important;
+		}
+		.menu{
+			margin-top: 2rem;
+			padding: 0 2rem;
+			font-weight: 600;
+		}
+		.sidebar-wrapper .menu .sidebar-item {
+			list-style: none;
+			margin-top: 0.5rem;
+			position: relative;
+		}
+		.sidebar-wrapper .menu .sidebar-title {
+			padding: 0 1rem;
+			margin: 1.5rem 0 1rem;
+			font-size: 1rem;
+			list-style: none;
+			font-weight: 600;
+			color: #25396f;
+		}
+		.sidebar-wrapper .menu .sidebar-item.active .sidebar-link {
+			background-color: #435ebe;
+		}
+		.sidebar-wrapper .menu .sidebar-link {
+			display: block;
+			padding: 0.7rem 1rem;
+			font-size: 1rem;
+			display: flex;
+			align-items: center;
+			border-radius: 0.5rem;
+			transition: all 0.5s;
+			text-decoration: none;
+			color: #25396f;
+		}
+		.sidebar-wrapper .menu .sidebar-item.active .sidebar-link span {
+			color: #fff;
+		}
+		.sidebar-wrapper .menu .submenu {
+			list-style: none;
+			display: none;
+			transition: max-height 2s cubic-bezier(0, 0.55, 0.45, 1);
+			overflow: hidden;
+		}
+		.sidebar-wrapper .menu .submenu .submenu-item a {
+			padding: 0.7rem 2rem;
+			display: block;
+			color: #25396f;
+			font-size: 0.85rem;
+			font-weight: 600;
+			letter-spacing: 0.5px;
+			transition: all 0.3s;
+		}
+		.sidebar-wrapper .menu .sidebar-link:hover {
+			background-color: #f0f1f5;
+		}
+		.sidebar-wrapper .menu .sidebar-link span {
+			margin-left: 1rem;
+		}
+		.box-right{
+			margin-left: 300px;
+    		padding: 2rem;
+		}
+		.stats-icon.purple {
+			background-color: #9694ff;
+		}
+
+		.stats-icon {
+			width: 3rem;
+			height: 3rem;
+			border-radius: 0.5rem;
+			background-color: #000;
+			float: right;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+		.stats-icon.blue {
+			background-color: #57caeb;
+		}
+		.page-heading {
+			margin: 0 0 2rem;
+		}
+
+		.py-4-5 {
+			padding-top: 2rem !important;
+			padding-bottom: 2rem !important;
+		}
+	  </style>
+   </head>
+   <body>
+      <div class="main">
+		 <div class="box-left">
+			<div class="sidebar-wrapper">
+				<div class="sidebar-menu">
+					<ul class="menu">
+						<!-- <li class="sidebar-title">Trang chủ</li> -->
+						<li class="sidebar-item sidebar-item-admin active">
+							<a href="/admin" class="sidebar-link">
+								<i class="bi bi-grid-fill"></i>
+								<span>Dashboard</span>
+							</a>
+						</li>		
+						<li class="sidebar-item has-sub quan-ly-san-pham">
+                            <a href="javascript:void(0)" class="sidebar-link">
+								<i class="fa-solid fa-user"></i>
+                                <span>User</span>
+                            </a>
+                            <!-- <ul class="submenu">
+                                <li class="submenu-item tao-moi-san-pham">
+                                    <a href="/admin/tao-moi-san-pham">Tạo mới</a>
+                                </li>
+                                <li class="submenu-item quan-ly-san-pham">
+                                    <a href="/admin/quan-ly-san-pham">Danh sách</a>
+                                </li>
+                                <li class="submenu-item quan-ly-so-luong">
+                                    <a href="/admin/quan-ly-so-luong">Số lượng</a>
+                                </li>
+                            </ul> -->
+                        </li>						
+					</ul>
+				</div>
+			</div>
+		 </div>
+		 <div class="box-right">
+			<div class="content-right">
+				<div class="page-heading">
+					<h3>Trang thống kê</h3>
+				</div>
+				<div class="page-content">
+					<section>
+						<div class="row">
+							<!-- <div class="col-md-3">
+								<div class="card">
+									<div class="card-body px-3 py-4-5">
+										<div class="row">
+											<div class="col-md-4">
+												<div class="stats-icon purple"><i class="iconly-boldPaper"></i></div>
+											</div>
+											<div class="col-md-8">
+												<h6 class="text-muted font-semibold">Tổng bài viết</h6>
+												<h6 class="font-extrabold mb-0">0</h6>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div> -->
+							<div class="col-md-3">
+								<div class="card">
+									<div class="card-body px-3 py-4-5">
+										<div class="row">
+											<div class="col-md-4">
+												<div class="stats-icon blue"><i class="fa-solid fa-user" style="color: #fff;"></i></div>
+											</div>
+											<div class="col-md-8">
+												<h6 class="text-muted font-semibold">Tài khoản</h6>
+												<h6 class="font-extrabold mb-0">1</h6>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- <div class="col-md-3">
+								<div class="card">
+									<div class="card-body px-3 py-4-5">
+										<div class="row">
+											<div class="col-md-4">
+												<div class="stats-icon green"><i class="iconly-boldInfo-Circle"></i></div>
+											</div>
+											<div class="col-md-8">
+												<h6 class="text-muted font-semibold">Tổng sản phẩm</h6>
+												<h6 class="font-extrabold mb-0">3</h6>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-3">
+								<div class="card">
+									<div class="card-body px-3 py-4-5">
+										<div class="row">
+											<div class="col-md-4">
+												<div class="stats-icon red"><i class="iconly-boldBookmark"></i></div>
+											</div>
+											<div class="col-md-8">
+												<h6 class="text-muted font-semibold">Tổng danh mục</h6>
+												<h6 class="font-extrabold mb-0">2</h6>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div> -->
+						</div>
+						
+					</section>
+					<section class="section" style="margin-top: 36px;">
+						<div class="card">
+							
+							<div class="card-header">
+								<div class="row">
+									<div class="col-md-6">Danh sách các user</div>
+								</div>
+							</div>
+							<div class="card-body">
+								<div class="table-responsive">
+									<table id="table1" class="table table-striped">
+										<thead>
+										  <tr>
+											<th>STT</th>
+											<th>Họ và tên</th>
+											<th>Email</th>
+											<th>Số điện thoại</th>
+											<th>Địa chỉ</th>
+											<th>Thao tác</th>
+										  </tr>
+										</thead>
+										<tbody id="tblData">
+										  <tr>
+											<td>1</td>
+											<td></td>
+											<td>test@gmail.com</td>
+											<td></td>
+											<td>Quản trị viên</td>											
+										  </tr>
+										</tbody>
+									  </table>
+								</div>								
+							</div>
+						</div>
+					</section>
+				</div>
+			</div>
+		 </div>
+	  </div>
+   </body>
+   
+   <script src="./bootstrap/js/bootstrap.min.js"></script>
+   <script src="./bootstrap/js/jquery-3.2.1.min.js"></script>
+   <script src="./bootstrap/js/owl.carousel.min.js"></script>
+   <script src="./fontawesome/js/fontawesome.min.js"></script>   
+   <script src="./js/appusers.js"></script>   
+   <script type="text/javascript">
+	$(document).ready(function() {
+
+	})
+
+ 
+
+</script>
+</html>
